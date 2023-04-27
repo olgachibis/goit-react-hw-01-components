@@ -1,6 +1,6 @@
-import { FriendListItem } from './FriendListItem'; // елемент списку
-import PropTypes from 'prop-types'; // типи пропсів
-import css from './FriendList.module.css'; // стилізація компонента
+import { FriendListItem } from './FriendListItem';
+import PropTypes from 'prop-types'; 
+import css from './FriendList.module.css';
 
 export const FriendList = ({ friends }) => {
   return (
