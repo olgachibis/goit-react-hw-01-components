@@ -7,17 +7,14 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
     // блок з інформацією про користувача та статистикою
     <div className={css.profile}>
 
-      {/* інформація про користувача */}
-      <div className={css.description}>
+        <div className={css.description}>
         <img src={avatar} alt={userName} className={css.avatar} />
         <p className={css.name}>{userName}</p>
         <p className={css.tag}>{tag}</p>
         <p className={css.location}>{location}</p>
       </div>
 
-      {/* статистика користувача */}
-
-      <ul className={css.stats}>
+        <ul className={css.stats}>
         <li className={css.item}>
           <span className={css.label}>Followers</span>
           <span className={css.quantiny}>{stats.followers}</span>
@@ -35,7 +32,6 @@ export const Profile = ({ userName, tag, location, avatar, stats }) => {
   );
 };
 
-// Типізація для компонента
 Profile.propTypes = {
   userName: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
